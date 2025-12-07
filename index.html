@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malika — персональная страница</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-ring"></div>
+  <p>Загрузка...</p>
+</div>
+
+<header class="site-header glass">
+  <div class="container header-flex">
+    <h1 class="logo">Malika</h1>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#blog">Блог</a>
+      <a href="#contact">Контакты</a>
+      <a href="https://www.instagram.com/esssentials_sm" target="_blank" class="insta">Instagram</a>
+    </nav>
+    <button id="themeToggle" class="btn small">Тёмная тема</button>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero improved">
+    <div class="hero-text">
+      <h2>Нежность. Стиль. Индивидуальность.</h2>
+      <p>Личный сайт Малики — отражение её характера: утончённость, лёгкость и спокойная эстетика.</p> <br>
+      <a href="https://www.instagram.com/esssentials_sm" target="_blank" class="btn big">Instagram профиль</a>
+    </div>
+    <div class="hero-photo-frame">
+      <img src="./Images/1.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="about" class="card reveal">
+    <h3>О Малике</h3>
+    <p>Малика — это сочетание мягкости и уверенности. Она ценит эстетику, минимализм и красоту во всём.</p>
+  </section>
+
+  <section id="gallery" class="card reveal">
+    <h3>Галерея</h3>
+    <div class="grid" id="galleryGrid">
+      <img src="./Images/2.jpg" alt="">
+      <img src="./Images/3.jpg" alt="">
+      <img src="./Images/4.jpg" alt="">
+      <img src="./Images/5.jpg" alt="">
+    </div>
+  </section>
+
+
+  <section id="blog" class="card blog-section">
+    <h3>Блог</h3>
+    <div class="blog-grid">
+      <article class="blog-item reveal">
+        <h4>✨ Маленькие радости каждый день</h4>
+        <p>Иногда достаточно чашки кофе, музыки в наушниках и солнечного света, чтобы почувствовать гармонию.</p>
+      </article>
+      <article class="blog-item reveal">
+        <h4>🌸 Сила женственности</h4>
+        <p>Быть женственной — значит быть собой.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="card small reveal">
+    <h3>Контакты</h3>
+    <p>Instagram: <a href="https://www.instagram.com/esssentials_sm" target="_blank">@esssentials_sm</a></p>
+    <p>Email: <span id="email">malika@example.com</span> <br> <br>
+      <button id="copyEmail" class="btn tiny">Копировать</button>
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2025 Malika. Все права защищены.</div>
+</footer>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="closeLightbox" class="lightbox-close" aria-label="Закрыть"></button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+
+<audio id="bgMusic" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+<button id="musicBtn" class="music-btn">🎵 Музыка</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
